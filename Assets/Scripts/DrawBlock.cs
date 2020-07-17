@@ -31,6 +31,7 @@ public class DrawBlock : MonoBehaviour
             flag = false;
             templateGameObject.GetComponent<BoxCollider2D>().enabled = true;
             templateGameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            templateGameObject.GetComponent<Rigidbody2D>().mass = 999f;
         }
     }
 }
